@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <h1>Pregunta:</h1>
+    <p id="pregunta"></p>
+    <div id="opciones">
+        <button id="boton-1" class="opcion">Opcion 1</button>
+        <button id="boton-2" class="opcion">Opcion 2</button>
+        <button id="boton-3" class="opcion">Opcion 3</button>
+    </div>
+    <p>Vidas: <span id="vidas">3</span></p>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
